@@ -88,6 +88,8 @@ Configurator -
 3. Data Layer Classes
 
 * GB_XYZ_Provider - Daata getters, fetches data from repo, database, API etc
+
+
 TODO/Betterment:  Xcode Template
 
 
@@ -100,6 +102,7 @@ TODO/Betterment:  Xcode Template
 
 ### Unit testing
 Assingment has flow testing only
+
 TODO/Betterment: Add more test cases for better coverage
 
 ### Support
