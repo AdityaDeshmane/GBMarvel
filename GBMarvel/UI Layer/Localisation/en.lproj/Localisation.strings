@@ -1,0 +1,26 @@
+/* 
+  Localisation.strings
+  GBMarvel
+
+  Created by Aditya Deshmane on 18/05/21.
+  
+*/
+
+
+"marvel_list_title" = "Marvel Characters";
+"marvel_list_footer_title" = "Loading";
+
+"marvel_detail_title" = "Character Details";
+"marvel_detail_loading_title" = "Loading details";
+"marvel_detail_name" = "Name";
+"marvel_detail_description" = "Description";
+"marvel_detail_comics" = "Comics";
+"marvel_detail_series" = "Series";
+"marvel_detail_stories" = "Stories";
+"marvel_detail_events" = "Events";
+
+"network" = "Network not reachable.";
+"api_failure" = "Service failed";
+"unknown" = "Something went wrong.";
+
+"ok" = "Ok";

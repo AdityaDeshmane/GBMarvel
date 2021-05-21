@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		867BCBB451A5B41EC34CE737 /* Pods_GBMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D094A5ED92C80DF5DB3B8D3 /* Pods_GBMarvel.framework */; };
+		D0D898772657C54C00EAC34D /* GBLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8984A2657C54C00EAC34D /* GBLaunchScreen.storyboard */; };
+		D0D898782657C54C00EAC34D /* GBCharacterFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D8984C2657C54C00EAC34D /* GBCharacterFlow.storyboard */; };
+		D0D898792657C54C00EAC34D /* GBAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8984E2657C54C00EAC34D /* GBAppDelegate.swift */; };
+		D0D8987A2657C54C00EAC34D /* Localisation.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0D898502657C54C00EAC34D /* Localisation.strings */; };
+		D0D8987B2657C54C00EAC34D /* GBLocalisationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898522657C54C00EAC34D /* GBLocalisationConstants.swift */; };
+		D0D8987C2657C54C00EAC34D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D898532657C54C00EAC34D /* Assets.xcassets */; };
+		D0D8987D2657C54C00EAC34D /* GBCharacterListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898552657C54C00EAC34D /* GBCharacterListCell.swift */; };
+		D0D8987E2657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898562657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift */; };
+		D0D8987F2657C54C00EAC34D /* GBCharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898572657C54C00EAC34D /* GBCharacterListViewController.swift */; };
+		D0D898802657C54C00EAC34D /* GBCharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898582657C54C00EAC34D /* GBCharacterListRouter.swift */; };
+		D0D898812657C54C00EAC34D /* GBCharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898592657C54C00EAC34D /* GBCharacterListPresenter.swift */; };
+		D0D898822657C54C00EAC34D /* GBUILayerStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8985B2657C54C00EAC34D /* GBUILayerStringExtensions.swift */; };
+		D0D898832657C54C00EAC34D /* GBUILayerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8985C2657C54C00EAC34D /* GBUILayerConstants.swift */; };
+		D0D898842657C54C00EAC34D /* GBUILayerAlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8985E2657C54C00EAC34D /* GBUILayerAlertUtility.swift */; };
+		D0D898852657C54C00EAC34D /* GBUILayerErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8985F2657C54C00EAC34D /* GBUILayerErrorUtility.swift */; };
+		D0D898862657C54C00EAC34D /* GBApplicationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898602657C54C00EAC34D /* GBApplicationRouter.swift */; };
+		D0D898872657C54C00EAC34D /* GBCharacterDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898622657C54C00EAC34D /* GBCharacterDetailConfigurator.swift */; };
+		D0D898882657C54C00EAC34D /* GBCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898632657C54C00EAC34D /* GBCharacterDetailViewController.swift */; };
+		D0D898892657C54C00EAC34D /* GBCharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898642657C54C00EAC34D /* GBCharacterDetailPresenter.swift */; };
+		D0D8988A2657C54C00EAC34D /* GBDomainLayerErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898662657C54C00EAC34D /* GBDomainLayerErrorUtility.swift */; };
+		D0D8988B2657C54C00EAC34D /* GBDomainLayerCharacterListConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898682657C54C00EAC34D /* GBDomainLayerCharacterListConfigurator.swift */; };
+		D0D8988C2657C54C00EAC34D /* GBCharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898692657C54C00EAC34D /* GBCharacterListInteractor.swift */; };
+		D0D8988D2657C54C00EAC34D /* GBDomainLayerCharacterDetailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8986B2657C54C00EAC34D /* GBDomainLayerCharacterDetailConfigurator.swift */; };
+		D0D8988E2657C54C00EAC34D /* GBCharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8986C2657C54C00EAC34D /* GBCharacterDetailInteractor.swift */; };
+		D0D8988F2657C54C00EAC34D /* GBDataLayerErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8986E2657C54C00EAC34D /* GBDataLayerErrorUtility.swift */; };
+		D0D898902657C54C00EAC34D /* GBDataLayerStringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8986F2657C54C00EAC34D /* GBDataLayerStringExtensions.swift */; };
+		D0D898912657C54C00EAC34D /* GBDataLayerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898702657C54C00EAC34D /* GBDataLayerConstants.swift */; };
+		D0D898922657C54C00EAC34D /* GBNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898712657C54C00EAC34D /* GBNetworkService.swift */; };
+		D0D898932657C54C00EAC34D /* GBCharacterListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */; };
+		D0D898942657C54C00EAC34D /* GBCharacterDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */; };
+		D0D898952657C54C00EAC34D /* OBNetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898742657C54C00EAC34D /* OBNetworkBase.swift */; };
+		D0D898962657C54C00EAC34D /* GBInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0D898762657C54C00EAC34D /* GBInfo.plist */; };
+		D0D8989F2657C67100EAC34D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0D8989E2657C67100EAC34D /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		019753CA6E1AD776E0A25033 /* Pods-GBMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMarvel.debug.xcconfig"; path = "Target Support Files/Pods-GBMarvel/Pods-GBMarvel.debug.xcconfig"; sourceTree = "<group>"; };
+		8D094A5ED92C80DF5DB3B8D3 /* Pods_GBMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GBMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D898272657C41600EAC34D /* GBMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GBMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D8984B2657C54C00EAC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GBLaunchScreen.storyboard; sourceTree = "<group>"; };
+		D0D8984D2657C54C00EAC34D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GBCharacterFlow.storyboard; sourceTree = "<group>"; };
+		D0D8984E2657C54C00EAC34D /* GBAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBAppDelegate.swift; sourceTree = "<group>"; };
+		D0D898512657C54C00EAC34D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localisation.strings; sourceTree = "<group>"; };
+		D0D898522657C54C00EAC34D /* GBLocalisationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBLocalisationConstants.swift; sourceTree = "<group>"; };
+		D0D898532657C54C00EAC34D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0D898552657C54C00EAC34D /* GBCharacterListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListCell.swift; sourceTree = "<group>"; };
+		D0D898562657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBUILayerCharacterListConfigurator.swift; sourceTree = "<group>"; };
+		D0D898572657C54C00EAC34D /* GBCharacterListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListViewController.swift; sourceTree = "<group>"; };
+		D0D898582657C54C00EAC34D /* GBCharacterListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListRouter.swift; sourceTree = "<group>"; };
+		D0D898592657C54C00EAC34D /* GBCharacterListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListPresenter.swift; sourceTree = "<group>"; };
+		D0D8985B2657C54C00EAC34D /* GBUILayerStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBUILayerStringExtensions.swift; sourceTree = "<group>"; };
+		D0D8985C2657C54C00EAC34D /* GBUILayerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBUILayerConstants.swift; sourceTree = "<group>"; };
+		D0D8985E2657C54C00EAC34D /* GBUILayerAlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBUILayerAlertUtility.swift; sourceTree = "<group>"; };
+		D0D8985F2657C54C00EAC34D /* GBUILayerErrorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBUILayerErrorUtility.swift; sourceTree = "<group>"; };
+		D0D898602657C54C00EAC34D /* GBApplicationRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBApplicationRouter.swift; sourceTree = "<group>"; };
+		D0D898622657C54C00EAC34D /* GBCharacterDetailConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailConfigurator.swift; sourceTree = "<group>"; };
+		D0D898632657C54C00EAC34D /* GBCharacterDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		D0D898642657C54C00EAC34D /* GBCharacterDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		D0D898662657C54C00EAC34D /* GBDomainLayerErrorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDomainLayerErrorUtility.swift; sourceTree = "<group>"; };
+		D0D898682657C54C00EAC34D /* GBDomainLayerCharacterListConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDomainLayerCharacterListConfigurator.swift; sourceTree = "<group>"; };
+		D0D898692657C54C00EAC34D /* GBCharacterListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListInteractor.swift; sourceTree = "<group>"; };
+		D0D8986B2657C54C00EAC34D /* GBDomainLayerCharacterDetailConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDomainLayerCharacterDetailConfigurator.swift; sourceTree = "<group>"; };
+		D0D8986C2657C54C00EAC34D /* GBCharacterDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailInteractor.swift; sourceTree = "<group>"; };
+		D0D8986E2657C54C00EAC34D /* GBDataLayerErrorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDataLayerErrorUtility.swift; sourceTree = "<group>"; };
+		D0D8986F2657C54C00EAC34D /* GBDataLayerStringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDataLayerStringExtensions.swift; sourceTree = "<group>"; };
+		D0D898702657C54C00EAC34D /* GBDataLayerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBDataLayerConstants.swift; sourceTree = "<group>"; };
+		D0D898712657C54C00EAC34D /* GBNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBNetworkService.swift; sourceTree = "<group>"; };
+		D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListProvider.swift; sourceTree = "<group>"; };
+		D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailProvider.swift; sourceTree = "<group>"; };
+		D0D898742657C54C00EAC34D /* OBNetworkBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBNetworkBase.swift; sourceTree = "<group>"; };
+		D0D898762657C54C00EAC34D /* GBInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GBInfo.plist; sourceTree = "<group>"; };
+		D0D8989E2657C67100EAC34D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DCB29D993FADE2A0EAC4F378 /* Pods-GBMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMarvel.release.xcconfig"; path = "Target Support Files/Pods-GBMarvel/Pods-GBMarvel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0D898242657C41600EAC34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				867BCBB451A5B41EC34CE737 /* Pods_GBMarvel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7021144183D80F77FE674D3B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D094A5ED92C80DF5DB3B8D3 /* Pods_GBMarvel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF97CADC8D7D6E20890431DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				019753CA6E1AD776E0A25033 /* Pods-GBMarvel.debug.xcconfig */,
+				DCB29D993FADE2A0EAC4F378 /* Pods-GBMarvel.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D0D8981E2657C41600EAC34D = {
+			isa = PBXGroup;
+			children = (
+				D0D8989E2657C67100EAC34D /* README.md */,
+				D0D898472657C54C00EAC34D /* GBMarvel */,
+				D0D898282657C41600EAC34D /* Products */,
+				CF97CADC8D7D6E20890431DA /* Pods */,
+				7021144183D80F77FE674D3B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D0D898282657C41600EAC34D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898272657C41600EAC34D /* GBMarvel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0D898472657C54C00EAC34D /* GBMarvel */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898482657C54C00EAC34D /* UI Layer */,
+				D0D898652657C54C00EAC34D /* Domain Layer */,
+				D0D8986D2657C54C00EAC34D /* Data Layer */,
+				D0D898752657C54C00EAC34D /* ReleaseConfig */,
+			);
+			path = GBMarvel;
+			sourceTree = "<group>";
+		};
+		D0D898482657C54C00EAC34D /* UI Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8984E2657C54C00EAC34D /* GBAppDelegate.swift */,
+				D0D898602657C54C00EAC34D /* GBApplicationRouter.swift */,
+				D0D898492657C54C00EAC34D /* Storyboards */,
+				D0D898542657C54C00EAC34D /* CharacterList */,
+				D0D898612657C54C00EAC34D /* CharacterDetail */,
+				D0D8985A2657C54C00EAC34D /* Extensions */,
+				D0D8985D2657C54C00EAC34D /* Utilities */,
+				D0D8985C2657C54C00EAC34D /* GBUILayerConstants.swift */,
+				D0D898532657C54C00EAC34D /* Assets.xcassets */,
+				D0D8984F2657C54C00EAC34D /* Localisation */,
+			);
+			path = "UI Layer";
+			sourceTree = "<group>";
+		};
+		D0D898492657C54C00EAC34D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8984A2657C54C00EAC34D /* GBLaunchScreen.storyboard */,
+				D0D8984C2657C54C00EAC34D /* GBCharacterFlow.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D0D8984F2657C54C00EAC34D /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898502657C54C00EAC34D /* Localisation.strings */,
+				D0D898522657C54C00EAC34D /* GBLocalisationConstants.swift */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
+		D0D898542657C54C00EAC34D /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898552657C54C00EAC34D /* GBCharacterListCell.swift */,
+				D0D898562657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift */,
+				D0D898572657C54C00EAC34D /* GBCharacterListViewController.swift */,
+				D0D898582657C54C00EAC34D /* GBCharacterListRouter.swift */,
+				D0D898592657C54C00EAC34D /* GBCharacterListPresenter.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		D0D8985A2657C54C00EAC34D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8985B2657C54C00EAC34D /* GBUILayerStringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D0D8985D2657C54C00EAC34D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8985E2657C54C00EAC34D /* GBUILayerAlertUtility.swift */,
+				D0D8985F2657C54C00EAC34D /* GBUILayerErrorUtility.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		D0D898612657C54C00EAC34D /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898622657C54C00EAC34D /* GBCharacterDetailConfigurator.swift */,
+				D0D898632657C54C00EAC34D /* GBCharacterDetailViewController.swift */,
+				D0D898642657C54C00EAC34D /* GBCharacterDetailPresenter.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		D0D898652657C54C00EAC34D /* Domain Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898662657C54C00EAC34D /* GBDomainLayerErrorUtility.swift */,
+				D0D898672657C54C00EAC34D /* CharacterList */,
+				D0D8986A2657C54C00EAC34D /* CharacterDetail */,
+			);
+			path = "Domain Layer";
+			sourceTree = "<group>";
+		};
+		D0D898672657C54C00EAC34D /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898682657C54C00EAC34D /* GBDomainLayerCharacterListConfigurator.swift */,
+				D0D898692657C54C00EAC34D /* GBCharacterListInteractor.swift */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		D0D8986A2657C54C00EAC34D /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8986B2657C54C00EAC34D /* GBDomainLayerCharacterDetailConfigurator.swift */,
+				D0D8986C2657C54C00EAC34D /* GBCharacterDetailInteractor.swift */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		D0D8986D2657C54C00EAC34D /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D0D8986E2657C54C00EAC34D /* GBDataLayerErrorUtility.swift */,
+				D0D8986F2657C54C00EAC34D /* GBDataLayerStringExtensions.swift */,
+				D0D898702657C54C00EAC34D /* GBDataLayerConstants.swift */,
+				D0D898712657C54C00EAC34D /* GBNetworkService.swift */,
+				D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */,
+				D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */,
+				D0D898742657C54C00EAC34D /* OBNetworkBase.swift */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		D0D898752657C54C00EAC34D /* ReleaseConfig */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898762657C54C00EAC34D /* GBInfo.plist */,
+			);
+			path = ReleaseConfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0D898262657C41600EAC34D /* GBMarvel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D8983B2657C41D00EAC34D /* Build configuration list for PBXNativeTarget "GBMarvel" */;
+			buildPhases = (
+				B1F19441019F26DE7D725FD6 /* [CP] Check Pods Manifest.lock */,
+				D0D898232657C41600EAC34D /* Sources */,
+				D0D898242657C41600EAC34D /* Frameworks */,
+				D0D898252657C41600EAC34D /* Resources */,
+				75B5974C24AF79039E9CA73F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GBMarvel;
+			productName = GBMarvel;
+			productReference = D0D898272657C41600EAC34D /* GBMarvel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0D8981F2657C41600EAC34D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					D0D898262657C41600EAC34D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = D0D898222657C41600EAC34D /* Build configuration list for PBXProject "GBMarvel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0D8981E2657C41600EAC34D;
+			productRefGroup = D0D898282657C41600EAC34D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0D898262657C41600EAC34D /* GBMarvel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0D898252657C41600EAC34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D8989F2657C67100EAC34D /* README.md in Resources */,
+				D0D898772657C54C00EAC34D /* GBLaunchScreen.storyboard in Resources */,
+				D0D898962657C54C00EAC34D /* GBInfo.plist in Resources */,
+				D0D8987A2657C54C00EAC34D /* Localisation.strings in Resources */,
+				D0D8987C2657C54C00EAC34D /* Assets.xcassets in Resources */,
+				D0D898782657C54C00EAC34D /* GBCharacterFlow.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		75B5974C24AF79039E9CA73F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMarvel/Pods-GBMarvel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GBMarvel/Pods-GBMarvel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GBMarvel/Pods-GBMarvel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F19441019F26DE7D725FD6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GBMarvel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0D898232657C41600EAC34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D898852657C54C00EAC34D /* GBUILayerErrorUtility.swift in Sources */,
+				D0D8987B2657C54C00EAC34D /* GBLocalisationConstants.swift in Sources */,
+				D0D8987D2657C54C00EAC34D /* GBCharacterListCell.swift in Sources */,
+				D0D898842657C54C00EAC34D /* GBUILayerAlertUtility.swift in Sources */,
+				D0D898792657C54C00EAC34D /* GBAppDelegate.swift in Sources */,
+				D0D8988C2657C54C00EAC34D /* GBCharacterListInteractor.swift in Sources */,
+				D0D898892657C54C00EAC34D /* GBCharacterDetailPresenter.swift in Sources */,
+				D0D8988A2657C54C00EAC34D /* GBDomainLayerErrorUtility.swift in Sources */,
+				D0D898812657C54C00EAC34D /* GBCharacterListPresenter.swift in Sources */,
+				D0D898882657C54C00EAC34D /* GBCharacterDetailViewController.swift in Sources */,
+				D0D898932657C54C00EAC34D /* GBCharacterListProvider.swift in Sources */,
+				D0D8988F2657C54C00EAC34D /* GBDataLayerErrorUtility.swift in Sources */,
+				D0D898952657C54C00EAC34D /* OBNetworkBase.swift in Sources */,
+				D0D898802657C54C00EAC34D /* GBCharacterListRouter.swift in Sources */,
+				D0D8988B2657C54C00EAC34D /* GBDomainLayerCharacterListConfigurator.swift in Sources */,
+				D0D898942657C54C00EAC34D /* GBCharacterDetailProvider.swift in Sources */,
+				D0D8988E2657C54C00EAC34D /* GBCharacterDetailInteractor.swift in Sources */,
+				D0D898822657C54C00EAC34D /* GBUILayerStringExtensions.swift in Sources */,
+				D0D898902657C54C00EAC34D /* GBDataLayerStringExtensions.swift in Sources */,
+				D0D898872657C54C00EAC34D /* GBCharacterDetailConfigurator.swift in Sources */,
+				D0D8987E2657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift in Sources */,
+				D0D8988D2657C54C00EAC34D /* GBDomainLayerCharacterDetailConfigurator.swift in Sources */,
+				D0D8987F2657C54C00EAC34D /* GBCharacterListViewController.swift in Sources */,
+				D0D898862657C54C00EAC34D /* GBApplicationRouter.swift in Sources */,
+				D0D898922657C54C00EAC34D /* GBNetworkService.swift in Sources */,
+				D0D898912657C54C00EAC34D /* GBDataLayerConstants.swift in Sources */,
+				D0D898832657C54C00EAC34D /* GBUILayerConstants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0D8984A2657C54C00EAC34D /* GBLaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D8984B2657C54C00EAC34D /* Base */,
+			);
+			name = GBLaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D8984C2657C54C00EAC34D /* GBCharacterFlow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D8984D2657C54C00EAC34D /* Base */,
+			);
+			name = GBCharacterFlow.storyboard;
+			sourceTree = "<group>";
+		};
+		D0D898502657C54C00EAC34D /* Localisation.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0D898512657C54C00EAC34D /* en */,
+			);
+			name = Localisation.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0D898392657C41D00EAC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0D8983A2657C41D00EAC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0D8983C2657C41D00EAC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 019753CA6E1AD776E0A25033 /* Pods-GBMarvel.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBMarvel/ReleaseConfig/GBInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.gb.GBMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0D8983D2657C41D00EAC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCB29D993FADE2A0EAC4F378 /* Pods-GBMarvel.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBMarvel/ReleaseConfig/GBInfo.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.gb.GBMarvel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0D898222657C41600EAC34D /* Build configuration list for PBXProject "GBMarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D898392657C41D00EAC34D /* Debug */,
+				D0D8983A2657C41D00EAC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D8983B2657C41D00EAC34D /* Build configuration list for PBXNativeTarget "GBMarvel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D8983C2657C41D00EAC34D /* Debug */,
+				D0D8983D2657C41D00EAC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0D8981F2657C41600EAC34D /* Project object */;
+}
