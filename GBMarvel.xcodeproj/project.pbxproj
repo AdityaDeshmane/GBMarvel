@@ -39,9 +39,20 @@
 		D0D898932657C54C00EAC34D /* GBCharacterListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */; };
 		D0D898942657C54C00EAC34D /* GBCharacterDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */; };
 		D0D898952657C54C00EAC34D /* OBNetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898742657C54C00EAC34D /* OBNetworkBase.swift */; };
-		D0D898962657C54C00EAC34D /* GBInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0D898762657C54C00EAC34D /* GBInfo.plist */; };
 		D0D8989F2657C67100EAC34D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0D8989E2657C67100EAC34D /* README.md */; };
+		D0D898D22657C99000EAC34D /* GBCharacterDetailFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */; };
+		D0D898D32657C99000EAC34D /* GBCharacterListFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0D898C92657C97900EAC34D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0D8981F2657C41600EAC34D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0D898262657C41600EAC34D;
+			remoteInfo = GBMarvel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		019753CA6E1AD776E0A25033 /* Pods-GBMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMarvel.debug.xcconfig"; path = "Target Support Files/Pods-GBMarvel/Pods-GBMarvel.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +91,10 @@
 		D0D898742657C54C00EAC34D /* OBNetworkBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OBNetworkBase.swift; sourceTree = "<group>"; };
 		D0D898762657C54C00EAC34D /* GBInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GBInfo.plist; sourceTree = "<group>"; };
 		D0D8989E2657C67100EAC34D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D0D898C42657C97900EAC34D /* GBMarvelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GBMarvelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0D898C82657C97900EAC34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailFlowTest.swift; sourceTree = "<group>"; };
+		D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListFlowTests.swift; sourceTree = "<group>"; };
 		DCB29D993FADE2A0EAC4F378 /* Pods-GBMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMarvel.release.xcconfig"; path = "Target Support Files/Pods-GBMarvel/Pods-GBMarvel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +104,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				867BCBB451A5B41EC34CE737 /* Pods_GBMarvel.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D898C12657C97900EAC34D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +139,7 @@
 			children = (
 				D0D8989E2657C67100EAC34D /* README.md */,
 				D0D898472657C54C00EAC34D /* GBMarvel */,
+				D0D898C52657C97900EAC34D /* GBMarvelTests */,
 				D0D898282657C41600EAC34D /* Products */,
 				CF97CADC8D7D6E20890431DA /* Pods */,
 				7021144183D80F77FE674D3B /* Frameworks */,
@@ -127,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				D0D898272657C41600EAC34D /* GBMarvel.app */,
+				D0D898C42657C97900EAC34D /* GBMarvelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -266,6 +290,16 @@
 			path = ReleaseConfig;
 			sourceTree = "<group>";
 		};
+		D0D898C52657C97900EAC34D /* GBMarvelTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */,
+				D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */,
+				D0D898C82657C97900EAC34D /* Info.plist */,
+			);
+			path = GBMarvelTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -278,6 +312,7 @@
 				D0D898242657C41600EAC34D /* Frameworks */,
 				D0D898252657C41600EAC34D /* Resources */,
 				75B5974C24AF79039E9CA73F /* [CP] Embed Pods Frameworks */,
+				D0D898E22657CAAD00EAC34D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -287,6 +322,24 @@
 			productName = GBMarvel;
 			productReference = D0D898272657C41600EAC34D /* GBMarvel.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D0D898C32657C97900EAC34D /* GBMarvelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0D898CD2657C97900EAC34D /* Build configuration list for PBXNativeTarget "GBMarvelTests" */;
+			buildPhases = (
+				D0D898C02657C97900EAC34D /* Sources */,
+				D0D898C12657C97900EAC34D /* Frameworks */,
+				D0D898C22657C97900EAC34D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0D898CA2657C97900EAC34D /* PBXTargetDependency */,
+			);
+			name = GBMarvelTests;
+			productName = GBMarvelTests;
+			productReference = D0D898C42657C97900EAC34D /* GBMarvelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -299,6 +352,10 @@
 				TargetAttributes = {
 					D0D898262657C41600EAC34D = {
 						CreatedOnToolsVersion = 12.1;
+					};
+					D0D898C32657C97900EAC34D = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = D0D898262657C41600EAC34D;
 					};
 				};
 			};
@@ -316,6 +373,7 @@
 			projectRoot = "";
 			targets = (
 				D0D898262657C41600EAC34D /* GBMarvel */,
+				D0D898C32657C97900EAC34D /* GBMarvelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -327,10 +385,16 @@
 			files = (
 				D0D8989F2657C67100EAC34D /* README.md in Resources */,
 				D0D898772657C54C00EAC34D /* GBLaunchScreen.storyboard in Resources */,
-				D0D898962657C54C00EAC34D /* GBInfo.plist in Resources */,
 				D0D8987A2657C54C00EAC34D /* Localisation.strings in Resources */,
 				D0D8987C2657C54C00EAC34D /* Assets.xcassets in Resources */,
 				D0D898782657C54C00EAC34D /* GBCharacterFlow.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0D898C22657C97900EAC34D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +440,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D0D898E22657CAAD00EAC34D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,7 +494,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D0D898C02657C97900EAC34D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0D898D22657C99000EAC34D /* GBCharacterDetailFlowTest.swift in Sources */,
+				D0D898D32657C99000EAC34D /* GBCharacterListFlowTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0D898CA2657C97900EAC34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0D898262657C41600EAC34D /* GBMarvel */;
+			targetProxy = D0D898C92657C97900EAC34D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D0D8984A2657C54C00EAC34D /* GBLaunchScreen.storyboard */ = {
@@ -599,6 +697,44 @@
 			};
 			name = Release;
 		};
+		D0D898CB2657C97900EAC34D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBMarvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.gb.GBMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBMarvel.app/GBMarvel";
+			};
+			name = Debug;
+		};
+		D0D898CC2657C97900EAC34D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GBMarvelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.marvel.gb.GBMarvelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GBMarvel.app/GBMarvel";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -616,6 +752,15 @@
 			buildConfigurations = (
 				D0D8983C2657C41D00EAC34D /* Debug */,
 				D0D8983D2657C41D00EAC34D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0D898CD2657C97900EAC34D /* Build configuration list for PBXNativeTarget "GBMarvelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0D898CB2657C97900EAC34D /* Debug */,
+				D0D898CC2657C97900EAC34D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

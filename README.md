@@ -94,7 +94,7 @@ TODO/Betterment:  Xcode Template
 
 1. Alamofire - Simplified network operations 
 2. SwiftyJSON - Simplified respose parsing 
-3. SwiftLint - Formating warning and error generation
+3. SwiftLint - Formating warning and error generation  (Project has .swiftlint.yml for customisations)
 
 ### Unit testing
 Assingment has flow testing only
