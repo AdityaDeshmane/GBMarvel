@@ -90,11 +90,12 @@ Configurator -
 TODO/Betterment:  Xcode Template
 
 
-### Third party libraries via Pod
+### Third party libraries via Pod 
 
 1. Alamofire - Simplified network operations 
 2. SwiftyJSON - Simplified respose parsing 
 3. SwiftLint - Formating warning and error generation  (Project has .swiftlint.yml for customisations)
+Note, pods are committed only for assignment 
 
 ### Unit testing
 Assingment has flow testing only
