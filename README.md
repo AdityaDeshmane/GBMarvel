@@ -55,6 +55,7 @@ providerResponsedelegate//weak
 
 networkService//strong
 
+![](Diagram.png)
 
 ### Configurations
 
