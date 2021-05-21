@@ -33,27 +33,27 @@ Ownerships -
 
 ViewControllers -
 
-presenterRequestDelegate//strong
+*presenterRequestDelegate//strong
 
-router//strong (ViewController holds router for this particular architecture)
+*router//strong (ViewController holds router for this particular architecture)
 
 Presenter - 
 
-presenterResponseDelegate//weak
+*presenterResponseDelegate//weak
 
-interactor//strong
+*interactor//strong
 
 Interactor -
 
-interactorResponseDelegate//weak
+*interactorResponseDelegate//weak
 
-providerRequestDelegate//strong
+*providerRequestDelegate//strong
 
 Provider  -
 
-providerResponsedelegate//weak
+*providerResponsedelegate//weak
 
-networkService//strong
+*networkService//strong
 
 ![](Diagram.png)
 
@@ -96,7 +96,7 @@ TODO/Betterment:  Xcode Template
 1. Alamofire - Simplified network operations 
 2. SwiftyJSON - Simplified respose parsing 
 3. SwiftLint - Formating warning and error generation  (Project has .swiftlint.yml for customisations)
-Note, pods are committed only for assignment 
+*Note, pods are committed only for assignment 
 
 ### Unit testing
 Assingment has flow testing only
