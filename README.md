@@ -35,7 +35,7 @@ ViewControllers -
 
 presenterRequestDelegate//strong
 
-router//strong
+router//strong (ViewController holds router for this particular architecture)
 
 Presenter - 
 

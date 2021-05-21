@@ -42,6 +42,7 @@
 		D0D8989F2657C67100EAC34D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D0D8989E2657C67100EAC34D /* README.md */; };
 		D0D898D22657C99000EAC34D /* GBCharacterDetailFlowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */; };
 		D0D898D32657C99000EAC34D /* GBCharacterListFlowTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */; };
+		D0D898F92657CF4600EAC34D /* GBCharacterListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D898F82657CF4600EAC34D /* GBCharacterListPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +96,7 @@
 		D0D898C82657C97900EAC34D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterDetailFlowTest.swift; sourceTree = "<group>"; };
 		D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GBCharacterListFlowTests.swift; sourceTree = "<group>"; };
+		D0D898F82657CF4600EAC34D /* GBCharacterListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GBCharacterListPresenterTests.swift; sourceTree = "<group>"; };
 		DCB29D993FADE2A0EAC4F378 /* Pods-GBMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GBMarvel.release.xcconfig"; path = "Target Support Files/Pods-GBMarvel/Pods-GBMarvel.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -207,8 +209,8 @@
 				D0D898552657C54C00EAC34D /* GBCharacterListCell.swift */,
 				D0D898562657C54C00EAC34D /* GBUILayerCharacterListConfigurator.swift */,
 				D0D898572657C54C00EAC34D /* GBCharacterListViewController.swift */,
-				D0D898582657C54C00EAC34D /* GBCharacterListRouter.swift */,
 				D0D898592657C54C00EAC34D /* GBCharacterListPresenter.swift */,
+				D0D898582657C54C00EAC34D /* GBCharacterListRouter.swift */,
 			);
 			path = CharacterList;
 			sourceTree = "<group>";
@@ -243,9 +245,9 @@
 		D0D898652657C54C00EAC34D /* Domain Layer */ = {
 			isa = PBXGroup;
 			children = (
-				D0D898662657C54C00EAC34D /* GBDomainLayerErrorUtility.swift */,
 				D0D898672657C54C00EAC34D /* CharacterList */,
 				D0D8986A2657C54C00EAC34D /* CharacterDetail */,
+				D0D898662657C54C00EAC34D /* GBDomainLayerErrorUtility.swift */,
 			);
 			path = "Domain Layer";
 			sourceTree = "<group>";
@@ -271,13 +273,13 @@
 		D0D8986D2657C54C00EAC34D /* Data Layer */ = {
 			isa = PBXGroup;
 			children = (
+				D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */,
+				D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */,
+				D0D898712657C54C00EAC34D /* GBNetworkService.swift */,
+				D0D898742657C54C00EAC34D /* OBNetworkBase.swift */,
 				D0D8986E2657C54C00EAC34D /* GBDataLayerErrorUtility.swift */,
 				D0D8986F2657C54C00EAC34D /* GBDataLayerStringExtensions.swift */,
 				D0D898702657C54C00EAC34D /* GBDataLayerConstants.swift */,
-				D0D898712657C54C00EAC34D /* GBNetworkService.swift */,
-				D0D898722657C54C00EAC34D /* GBCharacterListProvider.swift */,
-				D0D898732657C54C00EAC34D /* GBCharacterDetailProvider.swift */,
-				D0D898742657C54C00EAC34D /* OBNetworkBase.swift */,
 			);
 			path = "Data Layer";
 			sourceTree = "<group>";
@@ -293,8 +295,9 @@
 		D0D898C52657C97900EAC34D /* GBMarvelTests */ = {
 			isa = PBXGroup;
 			children = (
-				D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */,
 				D0D898D12657C99000EAC34D /* GBCharacterListFlowTests.swift */,
+				D0D898F82657CF4600EAC34D /* GBCharacterListPresenterTests.swift */,
+				D0D898D02657C99000EAC34D /* GBCharacterDetailFlowTest.swift */,
 				D0D898C82657C97900EAC34D /* Info.plist */,
 			);
 			path = GBMarvelTests;
@@ -500,6 +503,7 @@
 			files = (
 				D0D898D22657C99000EAC34D /* GBCharacterDetailFlowTest.swift in Sources */,
 				D0D898D32657C99000EAC34D /* GBCharacterListFlowTests.swift in Sources */,
+				D0D898F92657CF4600EAC34D /* GBCharacterListPresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
