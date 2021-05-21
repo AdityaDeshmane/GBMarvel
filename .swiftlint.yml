@@ -2,6 +2,8 @@ disabled_rules:
 - trailing_whitespace
 - todo
 - vertical_whitespace
+- weak_delegate
+- comment_spacing
 opt_in_rules:
 - empty_string
 excluded:
